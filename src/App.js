@@ -14,12 +14,6 @@ function App() {
     setData(newPerson);
   }
 
-  //Update Rating
-  const ratingChanged = (e) => {
-    console.log(e);
-    setRating(e)
-  }
-
   return (
     <>
       <section className='person wrapper App'>

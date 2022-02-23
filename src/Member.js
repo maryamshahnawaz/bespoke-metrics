@@ -7,13 +7,7 @@ const Member = ({ member, handleRemove, ratingChanged }) => {
    <h1>Member: {name}</h1>
    <span>Age: {age}</span>
    <br />
-   <span>Ratings: {rating}
-    {/* <ReactStars
-     onChange={(e) => ratingChanged(e.target.value)}
-     size={24}
-     activeColor="#ffd700"
-    /> */}
-   </span>
+   <span>Ratings: {rating} </span>
    <p> Last Three Activities: {activities.map((list, key) => {
     return <li key={key}>{list}</li>
    })}
