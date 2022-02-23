@@ -6,9 +6,7 @@ import Member from "./Member";
 function App() {
   const [data, setData] = useState(value);
   const [search, setSearch] = useState('');
-  const [rating, setRating] = useState('');
 
-  // delete function
   const handleRemove = (id) => {
     const newPerson = data.filter((item) => item.id !== id);
     setData(newPerson);
@@ -38,9 +36,8 @@ function App() {
               return (
                 <Member
                   member={member}
-                  ratingChanged={ratingChanged}
                   handleRemove={handleRemove}
-                  rating={rating} />
+                />
               )
             })
           }

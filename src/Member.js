@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Member = ({ member, handleRemove, ratingChanged }) => {
+const Member = ({ member, handleRemove, }) => {
  const { id, name, age, activities, rating } = member;
  return (
   <div key={id} className="person-details">
